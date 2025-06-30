@@ -1,0 +1,10 @@
+filename - kebab-case snake_case
+variables - camelCase
+function - camelCase
+classes - camelCase
+constant - SNAKE_CASE
+
+
+undefined + 1 => NaN
+Null = empty
+"string" + 1 => "string1"

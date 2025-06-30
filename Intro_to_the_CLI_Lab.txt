@@ -1,0 +1,84 @@
+Part I:
+1.
+yenlim@Yens-MacBook-Pro First_Git_Project % mkdir star-wars
+2.
+yenlim@Yens-MacBook-Pro First_Git_Project % mkdir star-wars/death-star
+3.
+yenlim@Yens-MacBook-Pro First_Git_Project % touch star-wars/death-star/darth-vader.txt star-wars/death-star/princess-leia.txt star-wars/death-star/storm-trooper.txt
+4.
+yenlim@Yens-MacBook-Pro First_Git_Project % mkdir star-wars/galaxy-far-far-away 
+5.
+yenlim@Yens-MacBook-Pro First_Git_Project % touch star-wars/galaxy-far-far-away/tatooine/luke.txt
+yenlim@Yens-MacBook-Pro First_Git_Project % touch star-wars/galaxy-far-far-away/tatooine/ben-kenobi.txt
+6.
+yenlim@Yens-MacBook-Pro First_Git_Project % mkdir star-wars/galaxy-far-far-away/tatooine
+yenlim@Yens-MacBook-Pro First_Git_Project % mkdir star-wars/galaxy-far-far-away/tatooine/millenium-falcon
+yenlim@Yens-MacBook-Pro First_Git_Project % touch star-wars/galaxy-far-far-away/tatooine/millenium-falcon/han-solo.txt
+yenlim@Yens-MacBook-Pro First_Git_Project % touch star-wars/galaxy-far-far-away/tatooine/millenium-falcon/chewbacca.txt
+
+Part II:
+1.
+yenlim@Yens-MacBook-Pro First_Git_Project % cp star-wars/death-star/storm-trooper.txt star-wars/galaxy-far-far-away/tatooine/ 
+
+Part III:
+1.
+yenlim@Yens-MacBook-Pro tatooine % mv luke.txt ben-kenobi.txt ../../galaxy-far-far-away/tatooine/millenium-falcon
+2.
+yenlim@Yens-MacBook-Pro tatooine % mv millenium-falcon ../../galaxy-far-far-away
+3.
+yenlim@Yens-MacBook-Pro tatooine % mv ../millenium-falcon ../../death-star 
+4.
+yenlim@Yens-MacBook-Pro tatooine % mv ../../death-star/princess-leia.txt ../../death-star/millenium-falcon 
+
+Part IV:
+1.
+yenlim@Yens-MacBook-Pro tatooine % mv ../../death-star/millenium-falcon/ben-kenobi.txt ../../death-star/millenium-falcon/obi-wan.txt
+
+Part V:
+yenlim@Yens-MacBook-Pro tatooine % rm ../../death-star/millenium-falcon/obi-wan.txt
+
+Part VI:
+1.
+yenlim@Yens-MacBook-Pro tatooine % mkdir ../../galaxy-far-far-away/yavin-4
+2.
+yenlim@Yens-MacBook-Pro tatooine % mv ../../death-star/millenium-falcon ../../galaxy-far-far-away/yavin-4  
+3.
+yenlim@Yens-MacBook-Pro yavin-4 % mkdir x-wing
+4.
+yenlim@Yens-MacBook-Pro yavin-4 % mv ../../galaxy-far-far-away/yavin-4/millenium-falcon/princess-leia.txt ../../galaxy-far-far-away/yavin-4  
+yenlim@Yens-MacBook-Pro yavin-4 % mv ../../galaxy-far-far-away/yavin-4/millenium-falcon/luke.txt x-wing 
+5.
+yenlim@Yens-MacBook-Pro yavin-4 % mv millenium-falcon x-wing ../../galaxy-far-far-away
+6.
+yenlim@Yens-MacBook-Pro yavin-4 % mkdir ../../death-star/tie-fighter-1
+yenlim@Yens-MacBook-Pro yavin-4 % mkdir ../../death-star/tie-fighter-2
+yenlim@Yens-MacBook-Pro yavin-4 % mkdir ../../death-star/tie-fighter-3
+7.
+yenlim@Yens-MacBook-Pro yavin-4 % mv ../../death-star/darth-vader.txt ../../death-star/tie-fighter-1 
+8.
+yenlim@Yens-MacBook-Pro yavin-4 % cp ../../death-star/storm-trooper.txt ../../death-star/tie-fighter-2  
+yenlim@Yens-MacBook-Pro yavin-4 % cp ../../death-star/storm-trooper.txt ../../death-star/tie-fighter-3
+9.
+yenlim@Yens-MacBook-Pro yavin-4 % mv ../../death-star/tie-fighter-1/ ../../death-star/tie-fighter-2 ../../death-star/tie-fighter-3 ../../galaxy-far-far-away
+
+Part VII:
+1.
+yenlim@Yens-MacBook-Pro yavin-4 % rm -r ../../galaxy-far-far-away/tie-fighter-2 ../../galaxy-far-far-away/tie-fighter-3
+
+Part VIII:
+1.
+yenlim@Yens-MacBook-Pro yavin-4 % touch ../x-wing/the-force.txt
+2.
+yenlim@Yens-MacBook-Pro yavin-4 % rm -r ../../death-star 
+3.
+yenlim@Yens-MacBook-Pro yavin-4 % mv ../millenium-falcon ../x-wing ../yavin-4  
+
+Part IX:
+1.
+yenlim@Yens-MacBook-Pro yavin-4 % cd ../../../
+2.
+yenlim@Yens-MacBook-Pro First_Git_Project % rm -r star-wars 
+
+
+
+  
