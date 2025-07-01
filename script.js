@@ -46,7 +46,6 @@
 //   console.log("That's not cool!");
 // }
 
-
 // const student = {
 //   firstName: 'Lauren',
 //   lastName: 'Marks',
@@ -74,7 +73,6 @@
 
 // console.log(getInitials("Jane Ann Doe"));
 
-
 // let guests = 6;
 // let availableTables;
 
@@ -85,7 +83,6 @@
 // }
 
 // console.log(availableTables);
-
 
 // function calculateSalesTax(amount, taxRate) {
 //   const salesTax = amount * (taxRate / 100);
@@ -98,7 +95,6 @@
 // const tax = calculateSalesTax(amount, taxRate);
 // console.log(`The sales tax on $${amount} at a rate of ${taxRate}% is $${tax.toFixed(2)}.`);
 
-
 // const person = {
 //   name: 'John',
 //   greet: function() {
@@ -108,7 +104,6 @@
 
 // let hello = person.greet;
 // hello.greet();
-
 
 // const car = {
 //   make: 'Toyota',
@@ -120,17 +115,155 @@
 //   console.log(car.item)
 // })
 
-const people = [
-  { name: 'Alice', age: 12 },
-  { name: 'Bob', age: 17 },
-  { name: 'Charlie', age: 21 },
-  { name: 'Dave', age: 35 }
-];
+// const people = [
+//   { name: 'Alice', age: 12 },
+//   { name: 'Bob', age: 17 },
+//   { name: 'Charlie', age: 21 },
+//   { name: 'Dave', age: 35 }
+// ];
 
-const filteredPeople = people.filter(person => {
-  if (person.age >= 16) {
-    person.isLegalToDrive = true;
-  }
-});
+// const filteredPeople = people.filter(person => {
+//   if (person.age >= 16) {
+//     person.isLegalToDrive = true;
+//   }
+// });
 
-console.log(filteredPeople);
+// console.log(filteredPeople);
+
+// Math.ceil(x);
+// Math.floor(x);
+// Math.round(x);
+// Math.max(1, 2, 3);
+// Math.min(1, 2, 3);
+// Math.round();
+
+// const calculatedValue = Math.floor(1.834);
+
+// console.log(calculatedValue);
+
+// const luckyNumber = Math.floor(Math.random() * 10);
+
+// const x = 7.1632;
+// const z = x.toFixed(2);
+// console.log(parseInt(z));
+
+// const currentDate = new Date();
+
+// const newDate = new Date("2025-01-01");
+// console.log(newDate);
+// const fullYear = newDate.getFullYear();
+// console.log(fullYear);
+// const month = newDate.getMonth();
+// console.log(month);
+// const thisDate = new Date().toISOString().split("T")[0];
+// console.log(thisDate);
+
+// const i = 2;
+
+// if (i % 2 === 0) {
+//   console.log("even");
+// } else if (i % 5 === 0) {
+//   console.log("divisible by 5");
+// } else {
+//   console.log("odd");
+// }
+
+// const citizen = true;
+// const age = 32;
+
+// if (citizen) {
+//   if (age >= 21) {
+//     console.log("You can vote.");
+//   } else {
+//     console.log("You cannot vote.");
+//   }
+// } else {
+//   console.log("You must be a citizen to vote.");
+// }
+
+// const i = 10;
+
+// i % 2
+//   ? i % 5
+//     ? console.log("divisible by 5")
+//     : console.log("odd")
+//   : console.log("even");
+
+// const type = "a";
+// switch (type) {
+//   case "a":
+//     console.log("animal");
+//     break;
+//   case "v":
+//     console.log("vegetable");
+//     break;
+//   default:
+//     console.log("none");
+// }
+
+// for (let i = 0; i <= 100; i++) {
+//   console.log(i);
+
+//   if (i === 10) {
+//     break;
+//   }
+// }
+
+// for (let i = 0; i <= 1000; i++) {
+//   for (let j = 0; j <= 100; j++) {}
+// }
+
+// let i = 0;
+
+// while (i <= 1000) {
+//   console.log(i);
+//   i++;
+// }
+
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 1000);
+
+// function nameOfFunction(parameter1, parameter2) {
+//   //codes
+//   return x;
+// }
+
+// const x = 10;
+// const y = 20;
+
+// function calculateTriangle(l, b) {
+//   const area = 0.5 * l * b;
+//   return area;
+// }
+
+// const area = calculateTriangle(x, y);
+
+// function sumAll(...allNums) {
+//   let sum = 0;
+
+//   for (let i = 0; i < allNums.length; i++) {
+//     sum += allNums[i];
+
+//     return sum;
+//   }
+// }
+
+// console.log(sumAll(1, 2, 3, 4, 5, 6, 7, 8));
+
+// function calServiceCharge(amount) {
+//   return amount * 0.1;
+// }
+
+// const calServiceCharge = (amount) => amount * 0.1;
+
+// const calGST = (amount) => amount * 0.09;
+
+// const calTotalBill = (amount) => {
+//   const serviceCharge = calServiceCharge(amount);
+//   const gst = calGST(amount);
+//   return amount + serviceCharge + gst;
+// };
+
+// console.log(calTotalBill(88));
