@@ -267,3 +267,14 @@
 // };
 
 // console.log(calTotalBill(88));
+
+
+function maxOfThree(...nums) {
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] > nums[i + 1]) {
+      return nums[i];
+    }
+  }
+}
+// how to solve this if maxOfThree is (5, 10, 17)?
+console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
