@@ -278,3 +278,5 @@ function maxOfThree(...nums) {
 }
 // how to solve this if maxOfThree is (5, 10, 17)?
 console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
+
+const test = 1
