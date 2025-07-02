@@ -245,9 +245,8 @@
 
 //   for (let i = 0; i < allNums.length; i++) {
 //     sum += allNums[i];
-
-//     return sum;
 //   }
+//   return sum;
 // }
 
 // console.log(sumAll(1, 2, 3, 4, 5, 6, 7, 8));
@@ -268,15 +267,179 @@
 
 // console.log(calTotalBill(88));
 
+// function maxOfThree(...nums) {
+//   for (i = 0; i < nums.length; i++) {
+//     if (nums[i] > nums[i + 1]) {
+//       return nums[i];
+//     }
+//   }
+// }
+// // how to solve this if maxOfThree is (5, 10, 17)?
+// console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
 
-function maxOfThree(...nums) {
-  for (i = 0; i < nums.length; i++) {
-    if (nums[i] > nums[i + 1]) {
-      return nums[i];
-    }
-  }
-}
-// how to solve this if maxOfThree is (5, 10, 17)?
-console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
+// const test = 1
 
-const test = 1
+// const arr = [1, 2, 3];
+
+// const shallowCopy = [...arr];
+
+// const arr1 = [1, [2, 3], 4];
+
+// const shallowCopy1 = [...arr1];
+
+// const deepCopy = JSON.parse(JSON.stringify(arr1));
+// const deepCopy1 = structuredClone(array);
+
+// function maxOfThree(...nums) {
+//   let max = 0;
+//   for (i = 0; i < nums.length; i++) {
+//     if (max < nums[i]) {
+//       max = nums[i];
+//     }
+//   }
+//   return max;
+// }
+
+// console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
+
+// // const rooms = ["bedroom", "kitchen", "living"];
+
+// // // this uses index to look at the value
+// // for (let i = 0; i < rooms.length; i++) {
+// //   console.log(rooms[i]);
+// // }
+
+// // // every loop, the previous room get destroyed.
+// // // first loop, room = "bedroom"
+// // // second loop, room = "kitchen"
+// // // third loop, room = "bedroom"
+// // // hence the room stores the actual value rather than index
+// // for (const room of rooms) {
+// //   console.log(room);
+// // }
+
+// // anomoyous function its a callback function
+// // passes rooms value to item (parameters), it just run function 3 times.
+
+// // rooms.forEach(function (item) {
+// //   console.log(item);
+// // });
+
+// // rooms.forEach((item) => {
+// //   console.log(item);
+// // });
+
+// // rooms.forEach(function (item, i) {
+// //   rooms[i] = rooms[i] + "hello";
+// //   console.log(rooms);
+// // });
+
+// const someChars = [
+//   "a",
+//   "c",
+//   "b",
+//   "a",
+//   "b",
+//   "c",
+//   "c",
+//   "a",
+//   "b",
+//   "c",
+//   "a",
+//   "b",
+//   "c",
+//   "a",
+//   "b",
+// ];
+
+// // let found = false;
+
+// // for (const char of someChars) {
+// //   console.log(char);
+// //   if (char === "b") {
+// //     console.log("breaking");
+// //     found = true;
+// //     break;
+// //   }
+// // }
+
+// // console.log(found);
+
+// let countA = 0;
+// let countB = 0;
+
+// for (const char of someChars) {
+//   console.log(char);
+//   if (char === "a") {
+//     console.log("counting a");
+//     countA++;
+//     continue;
+//   }
+
+//   console.log("next 1");
+
+//   if (char === "b") {
+//     console.log("counting b");
+//     countB++;
+//     continue;
+//   }
+//   console.log("next 2");
+// }
+
+// const kvp = {};
+// const activities = { time: "12:00", activity: "lunch", activity: "dinner" };
+// activities.day = "Saturday";
+
+// activities.activity = "Saturday";
+
+// console.log(activities);
+
+// // if "day" key is found in the activities.
+// if ("day" in activities) {
+// }
+
+// // returns an array of keys
+// Object.keys(activities);
+
+// // returns an array of values
+// Object.values(activities);
+
+// // returns a key and a value, returns an array of arrays [ [key,value], [key,value] ]
+// Object.entries(activities);
+
+// for (const [key, value] of Object.entries(activities)) {
+//   console.log(`${key}: ${value}`);
+// }
+
+// const shallowCopy = {...activities};
+// const deepCopy = JSON.parse(JSON,stringify(activities));
+// const deepCopy2 = structuredClone(activities):
+
+// const dog = 7;
+
+// const changeVar = (cat) => {
+//   cat = 777;
+//   console.log("in", cat);
+// };
+
+// changeVar(dog);
+
+// console.log("out", dog);
+
+const chicken = [1, 2, 3, 4];
+
+const changeArr = (duck) => {
+  duck[0] = 17;
+};
+
+changeArr(chicken);
+console.log(chicken);
+
+const horse = { hay: "hello", barn: "turkey" };
+
+const changeKvp = (cow) => {
+  cow.hay = "bye";
+};
+
+changeKvp(horse);
+console.log(horse);
